@@ -18,11 +18,13 @@ def main():
             num_of_wins_when_switched += 1
         i += 1
 
+    i = 0
     while i <= num_of_trials:
         if (trail(False)):
             num_of_wins_when_stay += 1
         i += 1
     
+    print(num_of_wins_when_stay)
     print("% of winning when we switch doors: ", (num_of_wins_when_switched / num_of_trials))
     print("% of winning when we switch doors: ", (num_of_wins_when_stay / num_of_trials))
 
